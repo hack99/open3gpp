@@ -50,6 +50,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>E:\Project\open3gpp\common\inc;E:\Project\open3gpp\lte\mac\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -65,6 +67,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>E:\Project\open3gpp\common\inc;E:\Project\open3gpp\lte\mac\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,6 +78,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\lte\mac\inc\lte_mac_harq.h" />
+    <ClInclude Include="..\..\..\lte\mac\inc\lte_mac_lcp.h" />
+    <ClInclude Include="..\..\..\lte\mac\inc\lte_mac_mux.h" />
+    <ClInclude Include="..\..\..\lte\mac\inc\lte_mac_pdu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lte\mac\src\lte_mac_harq.c" />
+    <ClCompile Include="..\..\..\lte\mac\src\lte_mac_lcp.c" />
+    <ClCompile Include="..\..\..\lte\mac\src\lte_mac_main.c" />
+    <ClCompile Include="..\..\..\lte\mac\src\lte_mac_mux.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

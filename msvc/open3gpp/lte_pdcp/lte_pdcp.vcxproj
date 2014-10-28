@@ -10,6 +10,15 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lte\pdcp\src\lte_pdcp_dl.c" />
+    <ClCompile Include="..\..\..\lte\pdcp\src\lte_pdcp_main.c" />
+    <ClCompile Include="..\..\..\lte\pdcp\src\lte_pdcp_ul.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\lte\pdcp\inc\lte_pdcp_dl.h" />
+    <ClInclude Include="..\..\..\lte\pdcp\inc\lte_pdcp_ul.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{60158270-7393-4156-84BC-A8E5F563F6B6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -50,6 +59,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Project\open3gpp\lte\pdcp\inc;E:\Project\open3gpp\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -73,8 +83,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
