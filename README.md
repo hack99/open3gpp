@@ -1,4 +1,4 @@
 open3gpp
 ========
 
-Open Source 3GPP Protocol Stack
+Open Source 3GPP Protocol Stack written in C++
